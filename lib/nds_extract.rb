@@ -8,7 +8,8 @@ def gross_for_director(director_data, row_index)
   i = 0
   gross = 0
   while i < movies.length do
-    gross += 
+    gross += movies[i][:worldwide_gross]
+    i += 1
   end
   gross
 end
